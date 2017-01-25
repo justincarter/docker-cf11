@@ -1,0 +1,7 @@
+docker-cf11:
+  build: .
+  environment:
+    - "VIRTUAL_HOST=docker-cf11.*"
+  volumes:
+    - /workbench/docker-cf11/logs/coldfusion:/opt/coldfusion11/cfusion/logs
+    - /workbench/docker-cf11/logs/nginx:/var/log/nginx
